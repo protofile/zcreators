@@ -12,6 +12,9 @@ module.exports = {
         },
         'z-purple': {
           600: '#B946E6'
+        },
+        'z-blue':{
+          600: '#2196F3'
         }
       },
       fontFamily:{
