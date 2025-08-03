@@ -3302,11 +3302,9 @@ figcaption {
     pointer-events: none;
     position: fixed;
     top: 73px;
-    right: 1rem;
+    right: -200px;
     max-height: calc(100vh - 90px);
     width: 200px;
-    --tw-translate-y: -1.5rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     flex-direction: column;
     align-items: flex-end;
     gap: 0px;
@@ -3335,7 +3333,6 @@ figcaption {
 
   nav .item .dropdown-ct {
     pointer-events: none;
-    pointer-events: auto;
     position: relative;
     top: auto;
     left: auto;
@@ -3640,12 +3637,8 @@ figcaption {
 
 nav.show{
   opacity: 1;
+  right: 16px;
   pointer-events: auto;
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
 }
 
 nav.show .item .dropdown-ct{

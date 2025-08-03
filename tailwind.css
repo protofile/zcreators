@@ -1042,7 +1042,7 @@
             @apply w-[160px] h-8 object-contain;
         }
         nav{
-            @apply w-[200px] flex-col fixed top-[73px] max-h-[calc(100vh-90px)] overflow-y-auto overflow-x-hidden right-4 bg-slate-800 rounded-lg py-4 items-end gap-0 opacity-0 pointer-events-none -translate-y-6;
+            @apply w-[200px] flex-col fixed top-[73px] max-h-[calc(100vh-90px)] overflow-y-auto overflow-x-hidden -right-[200px] bg-slate-800 rounded-lg py-4 items-end gap-0 opacity-0 pointer-events-none;
         }
         nav .item{
             @apply w-full;
@@ -1051,7 +1051,7 @@
             @apply py-2 text-right px-4 w-full;
         }
         nav .item .dropdown-ct{
-            @apply relative top-auto left-auto w-full rounded-none opacity-100 pointer-events-auto border-none bg-slate-900 text-right my-2 pointer-events-none;
+            @apply relative top-auto left-auto w-full rounded-none opacity-100 border-none bg-slate-900 text-right my-2 pointer-events-none;
         }
         
 
@@ -1247,12 +1247,8 @@
 }
 nav.show{
     opacity: 1;
+    right: 16px;
     pointer-events: auto;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
 }
 nav.show .item .dropdown-ct{
     pointer-events: auto;
