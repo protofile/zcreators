@@ -20,10 +20,7 @@
     }
 
     .for-mobile{
-        @apply block lg:hidden;
-    }
-    .for-desktop{
-        @apply hidden lg:block;
+        @apply hidden;
     }
 
     body,
@@ -31,10 +28,10 @@
         @apply w-full overflow-x-hidden;
     }
     body{
-        @apply bg-[#1a1a1a] pt-[93px];
+        @apply bg-[#1a1a1a] pt-[93px] transition-none;
     }
-    body{
-        @apply transition-none;
+    .master{
+        @apply overflow-x-hidden;
     }
     header{
         @apply w-full flex flex-col relative z-50 transition-all bg-[#1a1a1a];
@@ -676,7 +673,7 @@
         @apply h-[720px];
     }
     .program-cover img{
-        @apply w-full absolute top-0 left-0 opacity-50;
+        @apply w-full h-full object-cover absolute top-0 left-0 opacity-50;
     }
     .program-cover .text-ct{
         @apply w-full max-w-lg absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2;
@@ -871,30 +868,7 @@
     .article-ct a{
         @apply text-z-red-600;
     }
-    .news-card-3{
-        @apply flex gap-4 p-3 w-full items-center border border-z-red-600 rounded-lg border-l-4;
-    }
-    .news-card-3 .pic{
-        @apply w-24 flex-shrink-0 flex-grow-0;
-    }
-    .news-card-3 .pic a{
-        @apply relative block h-0 pt-[75%];
-    }
-    .news-card-3 .pic a img{
-        @apply absolute top-0 left-0 w-full h-full object-cover rounded-md;
-    }
-    .news-card-3 .text{
-        @apply flex flex-col gap-0;
-    }
-    .news-card-3 .text h3{
-        @apply leading-[100%];
-    }
-    .news-card-3 .text h3 a{
-        @apply text-md !no-underline !text-[#333] leading-[100%];
-    }
-    .news-card-3 .text span{
-        @apply text-z-red-600 text-xs font-bold leading-[100%];
-    }
+    
     .banner-breakingnews{
         @apply flex items-center w-full justify-between px-10 py-6 bg-black rounded-2xl;
     }
@@ -1038,7 +1012,20 @@
         @apply text-xl text-white font-bold;
     }
 
+    @media only screen and (max-width: 1280px){
+        .program-cover .row{
+            @apply h-[500px];
+        }
+    }
+
     @media only screen and (max-width: 1024px){
+        
+        .for-mobile{
+            @apply block;
+        }
+        .for-desktop{
+            @apply hidden;
+        }
         html{
             @apply overflow-x-hidden
         }
@@ -1049,17 +1036,27 @@
             @apply w-full justify-between;
         }
         .header-right{
-            @apply fixed top-[60px] right-0 w-screen hidden; 
+            @apply fixed top-[60px] right-0 w-screen; 
         }
         .logo img{
             @apply w-[160px] h-8 object-contain;
         }
         nav{
-            @apply flex-col;
+            @apply w-[200px] flex-col fixed top-[73px] max-h-[calc(100vh-90px)] overflow-y-auto overflow-x-hidden right-4 bg-slate-800 rounded-lg py-4 items-end gap-0 opacity-0 pointer-events-none -translate-y-6;
         }
+        nav .item{
+            @apply w-full;
+        }
+        nav .item a{
+            @apply py-2 text-right px-4 w-full;
+        }
+        nav .item .dropdown-ct{
+            @apply relative top-auto left-auto w-full rounded-none opacity-100 pointer-events-auto border-none bg-slate-900 text-right my-2 pointer-events-none;
+        }
+        
 
         .section-title .shadow-text{
-            @apply text-5xl;
+            @apply text-5xl leading-[0];
         }
         .hero img{
             @apply translate-x-0;
@@ -1069,11 +1066,111 @@
             @apply text-z-red-600 text-2xl;
         }
         h1{@apply text-3xl;}
-        h2, .hero.h2{@apply text-2xl;}
+        h2, .hero h2{@apply text-3xl;}
         h3{@apply text-xl;}
         h4{@apply text-lg;}
         h5{@apply text-md;}
         h6{@apply text-sm;}
+        p, li{@apply text-sm;}
+
+        .hero h2{
+            @apply text-center;
+        }
+        .hero p{
+            @apply text-center;
+        }
+        
+        .section-title h2{
+            @apply text-2xl;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        body{
+            @apply pt-[73px];
+        }
+        section{
+            @apply py-12;
+        }
+        .row{
+            @apply px-10;
+        }
+        .hero .btn{
+             @apply w-[220px];
+        }
+        .counter .col-md-4{
+            @apply border-r-0;
+        }
+        .counter-card{
+            @apply border-b border-b-slate-600 py-4 gap-1;
+        }
+        .counter-card .desc{
+            @apply text-sm;
+        }
+        .counter-card .num{
+            @apply text-4xl;
+        }
+        .activity .text-content{
+            @apply pl-0 pt-4;
+        }
+        .activity .text-content h3{
+            @apply text-xl;
+        }
+        .news-card .text h3,
+        .col-md-6 .news-card-2 .text h3,
+        .news-card-2 .text h3{
+            @apply text-lg;
+        }
+
+        .mediapreneur-news .col-md-3,
+        .mediapreneur-news .col-md-6{
+            @apply mb-5;
+        }
+        footer .col-md-3, 
+        footer .col-md-5{
+            @apply mb-6;
+        }
+        .inp-group{
+            @apply w-full;
+        }
+
+        .headline-1 .pic{
+            @apply pt-[135%];
+        }
+        .headline-1 .text{
+            @apply w-full px-6 top-1/2;
+        }
+        .headline-1 .text h3{
+            @apply text-lg;
+        }
+        .news-card-4{
+            @apply flex-col border-b border-b-slate-700 pb-6;
+        }
+        .news-card-4 .pic{
+            @apply w-full;
+        }
+        .news-card-4 .text h3{
+            @apply text-lg;
+        }
+        .program-cover .row{
+            @apply h-[300px];
+        }
+        .program-cover .text-ct{
+            @apply px-8;
+        }
+        .program-cover .text-ct h2{
+            @apply text-2xl;
+        }
+        .cta-box{
+            @apply flex-col lg:flex-row gap-6;
+        }
+        .cta-box .text{
+            @apply text-center;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .row{
+            @apply px-2;
+        }
     }
 }
 
@@ -1109,7 +1206,8 @@
 .support-slider .owl-dots,
 .news-slider .owl-dots,
 .testimony-slider .owl-dots,
-.office-slider .owl-dots{
+.office-slider .owl-dots,
+.spotlight-slider .owl-dots{
     padding-top: 16px;
     width: 100%;
     justify-content: center;
@@ -1140,4 +1238,25 @@
 }
 .owl-nav button.owl-next{
     right: -16px;
+}
+nav.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+nav.show .item .dropdown-ct{
+    pointer-events: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .owl-nav button.owl-prev{
+        left: -8px;
+    }
+    .owl-nav button.owl-next{
+        right: -8px;
+    }
 }
