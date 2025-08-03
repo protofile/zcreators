@@ -810,8 +810,14 @@ a:hover {
   }
 }
 
-.for-desktop{
-  @apply: hidden lg:block;
+.for-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .for-desktop {
+    display: block;
+  }
 }
 
 body,
@@ -1274,18 +1280,204 @@ section {
   background-color: rgb(230 70 92 / var(--tw-bg-opacity));
 }
 
+.dots-item.aceh {
+  left: 2%;
+  top: 5%;
+}
+
+.dots-item.sumatera-utara {
+  left: 8%;
+  top: 18%;
+}
+
+.dots-item.sumatera-barat {
+  left: 11%;
+  top: 37%;
+}
+
+.dots-item.riau {
+  left: 15%;
+  top: 31%;
+}
+
+.dots-item.kepulauan-riau {
+  left: 19%;
+  top: 26%;
+}
+
+.dots-item.jambi {
+  left: 18%;
+  top: 43%;
+}
+
+.dots-item.bangka-belitung {
+  left: 25%;
+  top: 47%;
+}
+
+.dots-item.sumatera-selatan {
+  left: 20%;
+  top: 53%;
+}
+
+.dots-item.bengkulu {
+  left: 15%;
+  top: 54%;
+}
+
+.dots-item.lampung {
+  left: 22%;
+  top: 66%;
+}
+
+.dots-item.banten {
+  left: 23%;
+  top: 74%;
+}
+
+.dots-item.dki-jakarta {
+  left: 26%;
+  top: 71%;
+}
+
+.dots-item.jawa-barat {
+  left: 28%;
+  top: 77%;
+}
+
 .dots-item.jawa-tengah {
   left: 32%;
   top: 76%;
+}
+
+.dots-item.di-yogyakarta {
+  left: 34%;
+  top: 82%;
+}
+
+.dots-item.jawa-timur {
+  left: 40%;
+  top: 82%;
+}
+
+.dots-item.bali {
+  left: 44%;
+  top: 85%;
+}
+
+.dots-item.nusa-tenggara-barat {
+  left: 50%;
+  top: 83%;
+}
+
+.dots-item.nusa-tenggara-timur {
+  left: 60%;
+  top: 85%;
+}
+
+.dots-item.kalimantan-barat {
+  left: 32%;
+  top: 35%;
+}
+
+.dots-item.kalimantan-tengah {
+  left: 38%;
+  top: 42%;
+}
+
+.dots-item.kalimantan-selatan {
+  left: 44%;
+  top: 53%;
+}
+
+.dots-item.kalimantan-timur {
+  left: 47%;
+  top: 35%;
+}
+
+.dots-item.kalimantan-utara {
+  left: 48%;
+  top: 17%;
+}
+
+.dots-item.sulawesi-utara {
+  left: 65%;
+  top: 26%;
+}
+
+.dots-item.gorontalo {
+  left: 61%;
+  top: 30%;
+}
+
+.dots-item.sulawesi-tengah {
+  left: 58%;
+  top: 41%;
+}
+
+.dots-item.sulawesi-barat {
+  left: 52%;
+  top: 51%;
+}
+
+.dots-item.sulawesi-selatan {
+  left: 54%;
+  top: 65%;
+}
+
+.dots-item.sulawesi-tenggara {
+  left: 59%;
+  top: 60%;
+}
+
+.dots-item.maluku {
+  left: 73%;
+  top: 54%;
+}
+
+.dots-item.maluku-utara {
+  left: 72%;
+  top: 28%;
+}
+
+.dots-item.papua-barat {
+  left: 84%;
+  top: 50%;
+}
+
+.dots-item.papua {
+  left: 93%;
+  top: 48%;
+}
+
+.dots-item.papua-tengah {
+  left: 89%;
+  top: 56%;
+}
+
+.dots-item.papua-pegunungan {
+  left: 98%;
+  top: 60%;
+}
+
+.dots-item.papua-selatan {
+  left: 97%;
+  top: 76%;
+}
+
+.dots-item.papua-barat-daya {
+  left: 80%;
+  top: 41%;
 }
 
 .dots-item .text {
   pointer-events: none;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 50%;
   width: 300px;
   --tw-translate-y: -105%;
+  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -1293,6 +1485,10 @@ section {
   padding: 1rem;
   color: rgba(255,255,255,0.7);
   opacity: 0;
+}
+
+.dots-item:hover {
+  z-index: 10;
 }
 
 .dots-item:hover .text {
@@ -1305,6 +1501,8 @@ section {
   font-size: 16px;
   line-height: 1rem;
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dots-item .text ul {
@@ -1315,6 +1513,7 @@ section {
 .dots-item .text li {
   font-size: 0.875rem;
   line-height: 1.25rem;
+  color: rgba(255,255,255,0.7);
 }
 
 section.spotlight {
@@ -3109,6 +3308,89 @@ figcaption {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media only screen and (max-width: 1024px){
+  html {
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100vw;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    display: none;
+    width: 100vw;
+  }
+
+  .logo img {
+    height: 2rem;
+    width: 160px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .section-title .shadow-text {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .hero img {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .burger {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgb(230 70 92 / var(--tw-text-opacity));
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  h2, .hero.h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 1rem;
+  }
+
+  h6 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 .owl-dots{
