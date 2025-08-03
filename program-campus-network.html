@@ -608,6 +608,34 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="for-mobile">
+                                <div class="network-slider owl-carousel">
+                                    <div class="item">
+                                        <div class="text">
+                                            <h5>Jawa Tengah</h5>
+                                            <ul>
+                                            <li>Universitas Papua</li>
+                                            <li>IAIN Manokwari</li>
+                                            <li>Politeknik Sorong</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="text">
+                                            <h5>Papua Barat</h5>
+                                            <ul>
+                                            <li>Universitas Papua</li>
+                                            <li>IAIN Manokwari</li>
+                                            <li>Politeknik Sorong</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -861,6 +889,24 @@
                     loop: false,
                     margin: 20
                 });
+
+                $(".network-slider").owlCarousel({
+                items: 1,
+                responsive:{
+                    0:{
+                        items:1.6
+                    },
+                    768:{
+                        items:3
+                    }
+                },
+                dots: true,
+                nav: true,
+                autoplay: true,
+                loop: true,
+                margin: 20,
+                center: true
+              });
 
               
             });

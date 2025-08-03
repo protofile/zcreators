@@ -1019,6 +1019,16 @@
         @apply text-z-red-600 font-semibold whitespace-nowrap hover:text-z-purple-600;
     }
 
+    .network-slider .item .text{
+        @apply p-6 border border-slate-700 rounded-2xl text-center flex flex-col gap-3;
+    }
+    .network-slider .item .text h5{
+        @apply font-bold text-z-red-600 text-md;
+    }
+    .network-slider .item .text li{
+        @apply text-xs;
+    }
+
     @media only screen and (max-width: 1280px){
         .program-cover .row{
             @apply h-[500px];
@@ -1172,8 +1182,20 @@
         .cta-box .text{
             @apply text-center;
         }
+        .support-card{
+            @apply h-auto;
+        }
+        .network{
+            @apply mt-20;
+        }
+        .network-counter{
+            @apply -top-[75%] w-full text-center;
+        }
+        .dots-item{
+            @apply pointer-events-none;
+        }
     }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 480px){
         .row{
             @apply px-2;
         }
@@ -1213,7 +1235,8 @@
 .news-slider .owl-dots,
 .testimony-slider .owl-dots,
 .office-slider .owl-dots,
-.spotlight-slider .owl-dots{
+.spotlight-slider .owl-dots,
+.network-slider .owl-dots{
     padding-top: 16px;
     width: 100%;
     justify-content: center;
@@ -1252,6 +1275,9 @@ nav.show{
 }
 nav.show .item .dropdown-ct{
     pointer-events: auto;
+}
+.network-slider .owl-nav button{
+    top: calc(42% - 16px);
 }
 
 @media only screen and (max-width: 768px){

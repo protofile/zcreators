@@ -3262,6 +3262,31 @@ figcaption {
   color: rgb(185 70 230 / var(--tw-text-opacity));
 }
 
+.network-slider .item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.network-slider .item .text h5 {
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(230 70 92 / var(--tw-text-opacity));
+}
+
+.network-slider .item .text li {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 @media only screen and (max-width: 1280px){
   .program-cover .row {
     height: 500px;
@@ -3556,6 +3581,26 @@ figcaption {
     text-align: center;
   }
 
+  .support-card {
+    height: auto;
+  }
+
+  .network {
+    margin-top: 5rem;
+  }
+
+  .network-counter {
+    top: -75%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dots-item {
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: 480px){
   .row {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -3599,7 +3644,8 @@ figcaption {
 .news-slider .owl-dots,
 .testimony-slider .owl-dots,
 .office-slider .owl-dots,
-.spotlight-slider .owl-dots{
+.spotlight-slider .owl-dots,
+.network-slider .owl-dots{
   padding-top: 16px;
   width: 100%;
   justify-content: center;
@@ -3643,6 +3689,10 @@ nav.show{
 
 nav.show .item .dropdown-ct{
   pointer-events: auto;
+}
+
+.network-slider .owl-nav button{
+  top: calc(42% - 16px);
 }
 
 @media only screen and (max-width: 768px){
