@@ -157,7 +157,7 @@
     .counter-card .desc{
         @apply text-lg text-white;
     }
-    .counter .col-md-4{
+    .counter .col-lg-4{
         @apply border-r border-r-slate-700 last:border-r-0;
     }
 
@@ -306,8 +306,11 @@
     .spotlight-list .item .pic{
         @apply relative;
     }
+    .spotlight-list .item .num{
+        @apply flex justify-center items-center w-6 h-6 text-xs rounded-full bg-white shadow-2xl border border-slate-200;
+    }
     .spotlight-list .item .pic .num{
-        @apply flex justify-center items-center absolute w-6 h-6 text-xs -top-1 -left-1 rounded-full bg-white shadow-2xl border border-slate-200;
+        @apply absolute -top-1 -left-1;
     }
     .spotlight-list .item .text h4{
         @apply text-md font-bold text-slate-800;
@@ -387,13 +390,13 @@
     .news-card-2 .pic a{
         @apply relative w-full h-0 pt-[75%] block;
     }
-    .col-md-3 .news-card-2:first-child{
+    .col-lg-3 .news-card-2:first-child{
         @apply mb-5;
     }
-    .col-md-6 .news-card-2 .pic a{
+    .col-lg-6 .news-card-2 .pic a{
         @apply pt-[76%];
     }
-    .col-md-6 .news-card-2 .text h3{
+    .col-lg-6 .news-card-2 .text h3{
         @apply text-2xl;
     }
     .testimony-card{
@@ -1012,6 +1015,10 @@
         @apply text-xl text-white font-bold;
     }
 
+    .text-link{
+        @apply text-z-red-600 font-semibold whitespace-nowrap hover:text-z-purple-600;
+    }
+
     @media only screen and (max-width: 1280px){
         .program-cover .row{
             @apply h-[500px];
@@ -1019,13 +1026,6 @@
     }
 
     @media only screen and (max-width: 1024px){
-        
-        .for-mobile{
-            @apply block;
-        }
-        .for-desktop{
-            @apply hidden;
-        }
         html{
             @apply overflow-x-hidden
         }
@@ -1085,6 +1085,12 @@
         }
     }
     @media only screen and (max-width: 768px){
+        .for-mobile{
+            @apply block;
+        }
+        .for-desktop{
+            @apply hidden;
+        }
         body{
             @apply pt-[73px];
         }
@@ -1097,7 +1103,7 @@
         .hero .btn{
              @apply w-[220px];
         }
-        .counter .col-md-4{
+        .counter .col-lg-4{
             @apply border-r-0;
         }
         .counter-card{
@@ -1116,13 +1122,13 @@
             @apply text-xl;
         }
         .news-card .text h3,
-        .col-md-6 .news-card-2 .text h3,
+        .col-lg-6 .news-card-2 .text h3,
         .news-card-2 .text h3{
             @apply text-lg;
         }
 
-        .mediapreneur-news .col-md-3,
-        .mediapreneur-news .col-md-6{
+        .mediapreneur-news .col-lg-3,
+        .mediapreneur-news .col-lg-6{
             @apply mb-5;
         }
         footer .col-md-3, 
