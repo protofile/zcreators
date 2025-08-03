@@ -1194,6 +1194,12 @@
         .dots-item{
             @apply pointer-events-none;
         }
+        .spotlight .row:nth-child(2),
+        .spotlight .row:nth-child(2) .col-md-12,
+        .testimony .row:nth-child(2),
+        .testimony .row:nth-child(2) .col-md-12{
+            @apply !px-0;
+        }
     }
     @media only screen and (max-width: 480px){
         .row{

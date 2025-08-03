@@ -3598,6 +3598,14 @@ figcaption {
   .dots-item {
     pointer-events: none;
   }
+
+  .spotlight .row:nth-child(2),
+        .spotlight .row:nth-child(2) .col-md-12,
+        .testimony .row:nth-child(2),
+        .testimony .row:nth-child(2) .col-md-12 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 480px){
