@@ -16,7 +16,7 @@
         @apply leading-[200%] text-slate-400;
     }
     a:hover{
-        @apply no-underline;
+        @apply no-underline text-z-red-600;
     }
 
     .for-mobile{
@@ -1197,7 +1197,9 @@
         .spotlight .row:nth-child(2),
         .spotlight .row:nth-child(2) .col-md-12,
         .testimony .row:nth-child(2),
-        .testimony .row:nth-child(2) .col-md-12{
+        .testimony .row:nth-child(2) .col-md-12,
+        .mobile-headline .row,
+        .mobile-headline .row .col-12{
             @apply !px-0;
         }
     }

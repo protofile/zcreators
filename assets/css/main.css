@@ -808,6 +808,8 @@ p, li {
 }
 
 a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(230 70 92 / var(--tw-text-opacity));
   text-decoration-line: none;
 }
 
@@ -3602,7 +3604,9 @@ figcaption {
   .spotlight .row:nth-child(2),
         .spotlight .row:nth-child(2) .col-md-12,
         .testimony .row:nth-child(2),
-        .testimony .row:nth-child(2) .col-md-12 {
+        .testimony .row:nth-child(2) .col-md-12,
+        .mobile-headline .row,
+        .mobile-headline .row .col-12 {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
