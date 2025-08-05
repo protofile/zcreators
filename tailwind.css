@@ -337,7 +337,8 @@
     .video-box{
         @apply relative;
     }
-    .video-box img{
+    .video-box img,
+    .video-box iframe{
         @apply w-full rounded-2xl;
     }
     .video-box .play-bt{

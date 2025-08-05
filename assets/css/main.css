@@ -1656,7 +1656,8 @@ section.cta-2 {
   position: relative;
 }
 
-.video-box img {
+.video-box img,
+    .video-box iframe {
   width: 100%;
   border-radius: 1rem;
 }
