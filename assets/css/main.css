@@ -1721,10 +1721,6 @@ section.cta-2 {
   color: rgba(255,255,255,0.5);
 }
 
-.news-card-2 {
-  position: relative;
-}
-
 .news-card-2 .text {
   position: absolute;
   bottom: 0px;
@@ -1743,17 +1739,6 @@ section.cta-2 {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.news-card-2 img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  border-radius: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .news-card-2 .pic {
@@ -1919,13 +1904,24 @@ section.cta-2 {
 }
 
 .accordion-item.active .accordion-body {
-  max-height: 200px;
+  max-height: 300px;
 }
 
-.accordion-body p {
+.accordion-body p,
+    .accordion-body li {
   font-size: 0.875rem;
   line-height: 1.25rem;
   line-height: 200%;
+}
+
+.accordion-body ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.accordion-body ol {
+  list-style-position: inside;
+  list-style-type: decimal;
 }
 
 footer {

@@ -449,10 +449,17 @@
         @apply max-h-0 overflow-hidden transition-all;
     }
     .accordion-item.active .accordion-body{
-        @apply max-h-[200px];
+        @apply max-h-[300px];
     }
-    .accordion-body p{
+    .accordion-body p,
+    .accordion-body li{
         @apply text-sm leading-[200%];
+    }
+    .accordion-body ul{
+        @apply list-disc list-inside;
+    }
+    .accordion-body ol{
+        @apply list-decimal list-inside;
     }
     footer{
         @apply pt-12 pb-24 bg-gradient-to-r from-z-blue-600 to-z-purple-600 relative;
