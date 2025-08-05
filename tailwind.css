@@ -855,10 +855,10 @@
         @apply text-md font-bold text-white;
     }
     .article-ct ul{
-        @apply list-disc list-inside;
+        @apply list-disc list-outside pl-6;
     }
     .article-ct ol{
-        @apply list-decimal list-inside;
+        @apply list-decimal list-outside pl-10;
     }
     .article-ct iframe{
         @apply !w-full rounded-2xl;

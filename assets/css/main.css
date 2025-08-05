@@ -2885,13 +2885,15 @@ figcaption {
 }
 
 .article-ct ul {
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
 .article-ct ol {
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: decimal;
+  padding-left: 2.5rem;
 }
 
 .article-ct iframe {
