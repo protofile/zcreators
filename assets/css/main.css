@@ -1580,6 +1580,8 @@ section.spotlight {
 
 .spotlight-list .item .pic {
   position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .spotlight-list .item .num {
@@ -1848,6 +1850,8 @@ section.cta-2 {
 }
 
 .testimony-card p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }

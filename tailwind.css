@@ -305,7 +305,7 @@
         @apply w-14 h-14 object-cover rounded-full;
     }
     .spotlight-list .item .pic{
-        @apply relative;
+        @apply relative flex-grow-0 flex-shrink-0;
     }
     .spotlight-list .item .num{
         @apply flex justify-center items-center flex-grow-0 flex-shrink-0 w-6 h-6 text-xs rounded-full bg-white shadow-2xl border border-slate-200;
@@ -425,7 +425,7 @@
         @apply text-md font-bold;
     }
     .testimony-card p{
-        @apply text-slate-800;
+        @apply text-slate-800 text-sm;
     }
     .partner-box{
         @apply bg-white rounded-lg mb-5 p-2 flex justify-center items-center;
