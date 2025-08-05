@@ -111,7 +111,7 @@
     }
 
     .hero{
-        @apply pt-[120px] pb-8 relative;
+        @apply pt-[0] pb-8 relative;
     }
     .hero h2{
         @apply text-5xl text-white font-bold;
@@ -1114,7 +1114,7 @@
             @apply text-2xl;
         }
     }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 769px){
         .for-mobile{
             @apply block;
         }
@@ -1221,6 +1221,10 @@
         .mobile-headline .row,
         .mobile-headline .row .col-12{
             @apply !px-0;
+        }
+
+        .hero{
+            @apply pt-20;
         }
     }
     @media only screen and (max-width: 480px){
