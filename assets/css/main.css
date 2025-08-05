@@ -1941,6 +1941,16 @@ section.cta-2 {
   line-height: 200%;
 }
 
+.accordion-body a {
+  --tw-text-opacity: 1;
+  color: rgb(1 175 195 / var(--tw-text-opacity));
+}
+
+.accordion-body a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(230 70 92 / var(--tw-text-opacity));
+}
+
 .accordion-body ul {
   list-style-position: inside;
   list-style-type: disc;

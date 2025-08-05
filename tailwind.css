@@ -462,6 +462,9 @@
     .accordion-body li{
         @apply text-sm leading-[200%];
     }
+    .accordion-body a{
+        @apply text-z-teal-600 hover:text-z-red-600;
+    }
     .accordion-body ul{
         @apply list-disc list-inside;
     }
