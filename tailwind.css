@@ -48,7 +48,7 @@
     }
 
     .btn{
-        @apply text-sm font-semibold text-slate-200 px-6 py-3 rounded-full;
+        @apply text-sm font-semibold text-slate-200 px-6 py-3 rounded-full flex justify-center items-center;
     }
     .btn.btn-red{
         @apply bg-z-red-600;
@@ -87,7 +87,8 @@
     nav .item a{
         @apply text-slate-200 text-sm py-4 block hover:text-z-red-600;
     }
-    nav .item.active a{
+    nav .item a.active,
+    nav .item a:hover{
         @apply text-z-red-600;
     }
     nav .item .dropdown-ct{

@@ -860,6 +860,9 @@ header {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 9999px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -962,7 +965,8 @@ nav .item a:hover {
   color: rgb(230 70 92 / var(--tw-text-opacity));
 }
 
-nav .item.active a {
+nav .item a.active,
+    nav .item a:hover {
   --tw-text-opacity: 1;
   color: rgb(230 70 92 / var(--tw-text-opacity));
 }
