@@ -180,7 +180,7 @@
     }
 
     .support-card{
-        @apply flex flex-col justify-between h-[200px] rounded-2xl border border-slate-700 p-8;
+        @apply flex flex-col justify-between h-[240px] rounded-2xl border border-slate-700 p-8;
     }
     .z-icon{
         @apply w-14 h-14 rounded-full flex-shrink-0 flex-grow-0 bg-z-teal-600 flex justify-center items-center;
@@ -1201,9 +1201,6 @@
         }
         .cta-box .text{
             @apply text-center;
-        }
-        .support-card{
-            @apply h-auto;
         }
         .network{
             @apply mt-20;
