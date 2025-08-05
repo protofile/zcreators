@@ -307,13 +307,19 @@
         @apply relative;
     }
     .spotlight-list .item .num{
-        @apply flex justify-center items-center w-6 h-6 text-xs rounded-full bg-white shadow-2xl border border-slate-200;
+        @apply flex justify-center items-center flex-grow-0 flex-shrink-0 w-6 h-6 text-xs rounded-full bg-white shadow-2xl border border-slate-200;
     }
     .spotlight-list .item .pic .num{
         @apply absolute -top-1 -left-1;
     }
+    .spotlight-list .item .text{
+        @apply w-[calc(100%-40px)];
+    }
     .spotlight-list .item .text h4{
-        @apply text-md font-bold text-slate-800;
+        @apply text-md font-bold text-slate-800 w-full;
+    }
+    .spotlight-list .item .text h4 a{
+        @apply whitespace-nowrap overflow-hidden text-ellipsis w-full inline-block;
     }
 
     .spotlight-list .item .text span{

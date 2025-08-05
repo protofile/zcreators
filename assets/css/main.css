@@ -1582,6 +1582,8 @@ section.spotlight {
   display: flex;
   height: 1.5rem;
   width: 1.5rem;
+  flex-shrink: 0;
+  flex-grow: 0;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
@@ -1603,12 +1605,25 @@ section.spotlight {
   left: -0.25rem;
 }
 
+.spotlight-list .item .text {
+  width: calc(100% - 40px);
+}
+
 .spotlight-list .item .text h4 {
+  width: 100%;
   font-size: 16px;
   line-height: 1rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+.spotlight-list .item .text h4 a {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .spotlight-list .item .text span {
