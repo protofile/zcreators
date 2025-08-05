@@ -1516,6 +1516,10 @@ section {
 }
 
 .dots-item .text li {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: rgba(255,255,255,0.7);
@@ -3294,7 +3298,6 @@ figcaption {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
   padding: 1.5rem;
-  text-align: center;
 }
 
 .network-slider .item .text h5 {
@@ -3305,7 +3308,16 @@ figcaption {
   color: rgb(230 70 92 / var(--tw-text-opacity));
 }
 
+.network-slider .item .text ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
 .network-slider .item .text li {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 0.75rem;
   line-height: 1rem;
 }
