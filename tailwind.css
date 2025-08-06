@@ -123,7 +123,7 @@
         @apply w-[150%] block scale-110 translate-x-16;
     }
     .hero-divider{
-        @apply absolute bottom-0 w-full h-[248px] bg-[url(../images/hero-divider.png)] bg-no-repeat bg-bottom z-10;
+        @apply pointer-events-none absolute bottom-0 w-full h-[248px] bg-[url(../images/hero-divider.png)] bg-no-repeat bg-bottom z-10;
     }
     .counter{
         @apply bg-gradient-to-b from-[#333] to-[#1a1a1a];
