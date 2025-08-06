@@ -334,6 +334,10 @@
         @apply w-full;
     }
 
+    .cta img{
+        @apply rounded-2xl;
+    }
+
     .video-box{
         @apply relative;
     }
@@ -429,10 +433,10 @@
         @apply text-slate-800 text-sm;
     }
     .partner-box{
-        @apply bg-white rounded-lg mb-5 p-2 flex justify-center items-center;
+        @apply bg-white rounded-lg p-2 flex justify-center items-center;
     }
     .partner-box img{
-        @apply w-[140px] h-[50px] object-contain;
+        @apply w-[140px] h-[80px] object-contain;
     }
 
     .accordion{
@@ -1266,7 +1270,8 @@
 .testimony-slider .owl-dots,
 .office-slider .owl-dots,
 .spotlight-slider .owl-dots,
-.network-slider .owl-dots{
+.network-slider .owl-dots,
+.partner-slider .owl-dots{
     padding-top: 16px;
     width: 100%;
     justify-content: center;

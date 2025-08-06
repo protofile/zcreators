@@ -683,6 +683,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -880,6 +884,11 @@ header {
   background-color: rgb(230 70 92 / var(--tw-bg-opacity));
 }
 
+.btn.btn-red:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .btn.btn-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1063,6 +1072,7 @@ nav .item .dropdown-ct a {
 }
 
 .hero-divider {
+  pointer-events: none;
   position: absolute;
   bottom: 0px;
   z-index: 10;
@@ -1652,6 +1662,10 @@ section.cta-2 {
   width: 100%;
 }
 
+.cta img {
+  border-radius: 1rem;
+}
+
 .video-box {
   position: relative;
 }
@@ -1862,7 +1876,6 @@ section.cta-2 {
 }
 
 .partner-box {
-  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1873,7 +1886,7 @@ section.cta-2 {
 }
 
 .partner-box img {
-  height: 50px;
+  height: 80px;
   width: 140px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -3701,7 +3714,8 @@ figcaption {
 .testimony-slider .owl-dots,
 .office-slider .owl-dots,
 .spotlight-slider .owl-dots,
-.network-slider .owl-dots{
+.network-slider .owl-dots,
+.partner-slider .owl-dots{
   padding-top: 16px;
   width: 100%;
   justify-content: center;
