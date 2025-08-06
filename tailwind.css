@@ -111,7 +111,7 @@
     }
 
     .hero{
-        @apply pt-[0] pb-8 relative;
+        @apply pt-5 pb-8 relative;
     }
     .hero h2{
         @apply text-5xl text-white font-bold;
@@ -522,7 +522,7 @@
         @apply text-sm leading-[150%];
     }
     .meta-info .kanal{
-        @apply font-bold text-z-teal-600;
+        @apply font-bold text-z-red-600;
     }
     .z-pagination{
         @apply flex gap-2 items-center justify-center py-14;
