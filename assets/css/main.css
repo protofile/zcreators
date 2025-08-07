@@ -767,10 +767,6 @@ video {
   padding-top: 2rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -875,6 +871,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   border-radius: 9999px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;

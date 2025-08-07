@@ -48,7 +48,7 @@
     }
 
     .btn{
-        @apply text-sm font-semibold text-slate-200 px-6 py-3 rounded-full flex justify-center items-center;
+        @apply text-sm font-semibold text-slate-200 px-6 py-3 rounded-full flex justify-center items-center gap-2;
     }
     .btn.btn-red{
         @apply bg-z-red-600 hover:text-white;
