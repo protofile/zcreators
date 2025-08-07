@@ -1054,6 +1054,12 @@
         @apply text-xs whitespace-nowrap w-full overflow-hidden text-ellipsis;
     }
 
+    @media only screen and (max-width: 1366px){
+        .program-cover .row{
+            @apply h-[500px];
+        }
+    }
+
     @media only screen and (max-width: 1280px){
         .program-cover .row{
             @apply h-[500px];
